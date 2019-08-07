@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
+body {
+  background-color: rgba(255, 235, 229);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+@keyframes example {
+  0%{ left: 0px; top: 0px; }
+  25%{ left: 200px; top: 0px; }
+  50%{ left: 200px; top: 200px; }
+  75%{ left: 0px; top: 200px; }
+  100%{ left: 0px; top: 0px; }
+}
+
+@keyframes example1 {
+  0%{ left: 200px; top: 0px; }
+  25%{ left: 200px; top: 200px; }
+  50%{ left: 0px; top: 200px; }
+  75%{ left: 0px; top: 0px; }
+  100%{ left: 200px; top: 0px; }
+}
+
+@keyframes example2 {
+  0%{ left: 200px; top: 200px; }
+  25%{ left: 0px; top: 200px; }
+  50%{ left: 0px; top: 0px; }
+  75%{ left: 200px; top: 0px; }
+  100%{ left: 200px; top: 200px; }
+}
+
+/* code by Bernadette Estacio */
+@keyframes example3 {
+  0%{ transform: translatex(0px) translatey(0px) }
+  50%{ transform: translatex(600px) translatey(-600px); }
+  100%{ transform: translatex(0px) translatey(0px) }
+}
+
+/* from tutorial */
+a.fun-hover{
+  font-size: 100px;
+  font-weight: 800;
+  color: white;
+  font-style: italic;
+  background-image: linear-gradient(to right, rgba(255, 235, 229) 50%, rgba(21, 106, 130, 0.7) 50%);
+  background-size: 200%;
+  transition: background-position 0.5s
+}
+
+.fun-hover:hover {
+  background-position: -100%;
+}
+
+#column-right {
+  display: inline-block;
+  width: 65%;
+  float: right;
+  margin-left: 50px;
+}
+
+#circle1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: rgba(114, 208, 191, 0.5);
+  border-radius: 50%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#circle2 {
+  width: 200px;
+  height: 200px;
+  background: rgba(253, 170, 133, 0.5);
+  border-radius: 50%;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#circle3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(39, 165, 143, 0.5);
+  border-radius: 50%;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#circle4 {
+  width: 400px;
+  height: 400px;
+  background: rgba(253, 147, 122, 0.5);
+  border-radius: 50%;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  box-shadow: 600px -200px rgba(254, 237, 125, 0.5);
+}
